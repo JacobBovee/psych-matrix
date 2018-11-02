@@ -1,0 +1,12 @@
+.custom-table {
+    border: 1px black solid;
+}
+
+.custom-header .custom-cell {
+    padding: 15px;
+}
+
+.custom-row .custom-cell {
+    padding: 15px;
+    border: 1px black solid;
+}

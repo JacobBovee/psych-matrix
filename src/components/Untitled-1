@@ -1,0 +1,29 @@
+
+
+      public renderHeader() {
+    const { columnHeaders } = this.state
+    return (
+      <Row className={'custom-header'}>
+        <Cell className={'custom-cell disabled-cell'} />
+        {
+          columnHeaders.map((value, i) =>
+            <Cell className={'custom-cell'} key={`header_${i}`}>{value}</Cell>
+          )
+        }
+      </Row>
+    )
+  }
+
+  public renderRows() {
+    const { columnHeaders, rowHeaders, rows } = this.state
+
+    return (
+      rowHeaders.map((rowHeader, i) => {
+        return (
+          <Row className='custom-row' key={`row-${i}`}>
+              <Cell className={'custom-cell'}>value</Cell>
+          </Row>
+        )
+      })
+    )
+  }

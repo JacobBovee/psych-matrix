@@ -1,0 +1,14 @@
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+import * as Router from 'react-router-dom'
+import App from './App'
+import registerServiceWorker from './registerServiceWorker'
+import './styles/index.css'
+
+const { BrowserRouter } = Router
+
+ReactDOM.render(
+  <BrowserRouter><App /></BrowserRouter>,
+  document.getElementById('root') as HTMLElement
+)
+registerServiceWorker()
