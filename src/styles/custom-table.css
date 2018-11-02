@@ -1,12 +1,32 @@
 .custom-table {
-    border: 1px black solid;
+    border: 1px #ccc solid;
+    font-size: 13px;
+    letter-spacing: 0.1px;
+}
+
+.custom-cell {
+    text-align: center;
 }
 
 .custom-header .custom-cell {
     padding: 15px;
+    border-right: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    cursor: cell;
 }
 
 .custom-row .custom-cell {
     padding: 15px;
-    border: 1px black solid;
+    border: 1px #ccc solid;
+    white-space: no-wrap;
+    cursor: pointer;
+}
+
+.empty-cell {
+    background-color: rgba(240, 240, 240, 0.5);
+    cursor: cell !important;
+}
+
+.disabled-cell {
+    background-color: rgb(240, 240, 240);
 }

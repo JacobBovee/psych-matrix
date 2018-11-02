@@ -1,0 +1,14 @@
+.modal-title {
+    font-size: 18px;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+.modal-description {
+    font-size: 15px;
+    letter-spacing: 0.1px;
+}
+
+.active-list li {
+    padding-bottom: 8px;
+}
