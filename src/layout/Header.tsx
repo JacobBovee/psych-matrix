@@ -1,6 +1,7 @@
 import AppBar from '@material-ui/core/AppBar'
 import Grid from '@material-ui/core/Grid'
 import * as React from 'react'
+import '../styles/header-style.css'
 
 export default class Header extends React.Component {
     public render() {
@@ -10,13 +11,15 @@ export default class Header extends React.Component {
                     container={true}
                     direction={'row'}
                     alignItems={'center'}
+                    justify={'center'}
                 >
                     <Grid
                         item={true}
-                        justify={'flex-end'}
+                        justify={'center'}
+                        alignItems={'center'}
                     >
-                        <h2>
-                            _
+                        <h2 className={'header-title'}>
+                            Mentor Matrix
                         </h2>
                     </Grid>
                 </Grid>

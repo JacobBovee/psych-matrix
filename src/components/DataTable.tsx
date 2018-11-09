@@ -47,7 +47,7 @@ export default class DataTable extends React.Component {
        <Cell className={'custom-cell disabled-cell'} />
         {
           columnHeaders.map((value, i) =>
-            <Cell className={'custom-cell'} key={`header_${i}`}>{value}</Cell>
+            <Cell className={'custom-cell header-cell header-border'} key={`header_${i}`}>{value}</Cell>
           )
         }
       </Row>
@@ -71,7 +71,7 @@ export default class DataTable extends React.Component {
         const row = rows[i]
         return (
           <Row className='custom-row' key={`row-${i}`}>
-                <Cell className={'custom-cell'}>{rowHeader}</Cell>
+                <Cell className={'custom-cell header-cell'}>{rowHeader}</Cell>
                 {row.map((value, i2) => {
                   if (value.length > 0) {
                     return (

@@ -15,6 +15,10 @@
     cursor: cell;
 }
 
+.header-border {
+    border-bottom: 1px #ccc solid;
+}
+
 .custom-row .custom-cell {
     padding: 15px;
     border: 1px #ccc solid;
@@ -22,11 +26,16 @@
     cursor: pointer;
 }
 
-.empty-cell {
+.header-cell {
     background-color: rgba(240, 240, 240, 0.5);
+    font-weight: bold;
+}
+
+.empty-cell {
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: cell !important;
 }
 
 .disabled-cell {
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(0, 0, 0, 0.1);
 }
